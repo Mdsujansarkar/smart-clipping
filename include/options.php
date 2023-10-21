@@ -536,6 +536,97 @@ $section = array(
 	'subsection' => true,
 	'fields'     => array(
 		array(
+			'id'       => 'port-text-one',
+			'type'     => 'text',
+			'title'    => esc_html__( 'text one', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+			'default'  =>'Clipping Path'
+		),
+		array(
+			'id'       => 'port-link-one',
+			'type'     => 'text',
+			'title'    => esc_html__( 'link one', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+		),
+		array(
+			'id'       => 'port-text-two',
+			'type'     => 'text',
+			'title'    => esc_html__( 'text one', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+			'default'  =>'Clipping Path'
+		),
+		array(
+			'id'       => 'port-link-two',
+			'type'     => 'text',
+			'title'    => esc_html__( 'link one', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+		),
+		array(
+			'id'       => 'port-text-three',
+			'type'     => 'text',
+			'title'    => esc_html__( 'text one', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+			'default'  =>'Clipping Path'
+		),
+		array(
+			'id'       => 'port-link-three',
+			'type'     => 'text',
+			'title'    => esc_html__( 'link one', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+		),
+		array(
+			'id'       => 'port-text-four',
+			'type'     => 'text',
+			'title'    => esc_html__( 'text one', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+			'default'  =>'Clipping Path'
+		),
+		array(
+			'id'       => 'port-link-four',
+			'type'     => 'text',
+			'title'    => esc_html__( 'link one', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+		),
+		array(
+			'id'       => 'port-text-five',
+			'type'     => 'text',
+			'title'    => esc_html__( 'text one', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+			'default'  =>'Clipping Path'
+		),
+		array(
+			'id'       => 'port-link-five',
+			'type'     => 'text',
+			'title'    => esc_html__( 'link one', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+		),
+		array(
+			'id'       => 'port-text-six',
+			'type'     => 'text',
+			'title'    => esc_html__( 'text one', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+			'default'  =>'Clipping Path'
+		),
+		array(
+			'id'       => 'port-link-six',
+			'type'     => 'text',
+			'title'    => esc_html__( 'link one', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+		),
+		array(
+			'id'       => 'port-text-seven',
+			'type'     => 'text',
+			'title'    => esc_html__( 'text one', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+			'default'  =>'Clipping Path'
+		),
+		array(
+			'id'       => 'port-link-seven',
+			'type'     => 'text',
+			'title'    => esc_html__( 'link one', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+		),
+		array(
 			'id'       => 'port-beforeAfter-one',
 			'type'     => 'text',
 			'title'    => esc_html__( 'Before Image One', 'your-textdomain-here' ),
@@ -605,6 +696,213 @@ $section = array(
 			'id'       => 'port-afterAfter-six',
 			'type'     => 'text',
 			'title'    => esc_html__( 'Aftar Image Six', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+		),
+	),
+);
+
+Redux::set_section( $opt_name, $section );
+// Pricing
+$section = array(
+	'title'      => esc_html__( 'Pricing', 'your-textdomain-here' ),
+	'id'         => 'pricing-section',
+	'subsection' => true,
+	'fields'     => array(
+		array(
+			'id'       => 'standard-no-extra-charge',
+			'type'     => 'text',
+			'title'    => esc_html__( 'Standard No Extra Charge', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+			'default'  =>'web'
+		),
+		array(
+			'id'       => 'standard-no-extra-charge-text',
+			'type'     => 'text',
+			'title'    => esc_html__( 'Standard No Extra Charge Text', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+			'default'  =>'Standard No Extra Charge'
+		),
+		array(
+			'id'       => 'standard-no-extra-charge-image-one',
+			'type'     => 'text',
+			'title'    => esc_html__( 'Standard No Extra Charge Image One', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+		),
+		array(
+			'id'       => 'standard-no-extra-charge-image-two',
+			'type'     => 'text',
+			'title'    => esc_html__( 'Standard No Extra Charge Image Two', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+		),
+		array(
+			'id'       => 'standard-no-extra-charge-image-three',
+			'type'     => 'text',
+			'title'    => esc_html__( 'Standard No Extra Charge Image Three', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+		),
+		array(
+			'id'       => 'category-ghshdsyh',
+			'type'     => 'text',
+			'title'    => esc_html__( 'Category Ghshdsyh + 1,00€*', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+			'default'  =>'design'
+		),
+		array(
+			'id'       => 'category-ghshdsyh-text',
+			'type'     => 'text',
+			'title'    => esc_html__( 'Category Ghshdsyh + 1,00€* Text', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+			'default'  =>'Category Ghshdsyh + 1,00€*'
+		),
+		array(
+			'id'       => 'category-ghshdsyh-image-one',
+			'type'     => 'text',
+			'title'    => esc_html__( 'Category Ghshdsyh + 1,00€* Image One', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+		),
+		array(
+			'id'       => 'category-ghshdsyh-image-two',
+			'type'     => 'text',
+			'title'    => esc_html__( 'Category Ghshdsyh + 1,00€* Image Two', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+		),
+		array(
+			'id'       => 'category-ghshdsyh-image-three',
+			'type'     => 'text',
+			'title'    => esc_html__( 'Category Ghshdsyh + 1,00€* Image Three', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+		),
+		//
+
+		array(
+			'id'       => 'category-ghshdsyh-2',
+			'type'     => 'text',
+			'title'    => esc_html__( 'Category Ghshdsyh + 1,00€*', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+			'default'  =>'design'
+		),
+		array(
+			'id'       => 'category-ghshdsyh-text-2',
+			'type'     => 'text',
+			'title'    => esc_html__( 'Category Ghshdsyh + 1,00€* Text', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+			'default'  =>'Category Ghshdsyh + 1,00€*'
+		),
+		array(
+			'id'       => 'category-ghshdsyh-image-one-2',
+			'type'     => 'text',
+			'title'    => esc_html__( 'Category Ghshdsyh + 1,00€* Image One', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+		),
+		array(
+			'id'       => 'category-ghshdsyh-image-two-2',
+			'type'     => 'text',
+			'title'    => esc_html__( 'Category Ghshdsyh + 1,00€* Image Two', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+		),
+		array(
+			'id'       => 'category-ghshdsyh-image-three-2',
+			'type'     => 'text',
+			'title'    => esc_html__( 'Category Ghshdsyh + 1,00€* Image Three', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+		),
+		//
+		array(
+			'id'       => 'category-ghshdsyh-3',
+			'type'     => 'text',
+			'title'    => esc_html__( 'Category1 + 1,00€*', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+			'default'  =>'design'
+		),
+		array(
+			'id'       => 'category-ghshdsyh-text-3',
+			'type'     => 'text',
+			'title'    => esc_html__( 'Category1 + 1,00€* Text', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+			'default'  =>'Category Ghshdsyh + 1,00€*'
+		),
+		array(
+			'id'       => 'category-ghshdsyh-image-one-3',
+			'type'     => 'text',
+			'title'    => esc_html__( 'Category1 + 1,00€* Image One', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+		),
+		array(
+			'id'       => 'category-ghshdsyh-image-two-3',
+			'type'     => 'text',
+			'title'    => esc_html__( 'Category1 + 1,00€* Image Two', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+		),
+		array(
+			'id'       => 'category-ghshdsyh-image-three-3',
+			'type'     => 'text',
+			'title'    => esc_html__( 'Category1 + 1,00€* Image Three', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+		),
+		//
+		array(
+			'id'       => 'category-ghshdsyh-3',
+			'type'     => 'text',
+			'title'    => esc_html__( 'Category1 + 1,00€*', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+			'default'  =>'design'
+		),
+		array(
+			'id'       => 'category-ghshdsyh-text-3',
+			'type'     => 'text',
+			'title'    => esc_html__( 'Category1 + 1,00€* Text', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+			'default'  =>'Category Ghshdsyh + 1,00€*'
+		),
+		array(
+			'id'       => 'category-ghshdsyh-image-one-3',
+			'type'     => 'text',
+			'title'    => esc_html__( 'Category1 + 1,00€* Image One', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+		),
+		array(
+			'id'       => 'category-ghshdsyh-image-two-3',
+			'type'     => 'text',
+			'title'    => esc_html__( 'Category1 + 1,00€* Image Two', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+		),
+		array(
+			'id'       => 'category-ghshdsyh-image-three-3',
+			'type'     => 'text',
+			'title'    => esc_html__( 'Category1 + 1,00€* Image Three', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+		),
+		//
+		array(
+			'id'       => 'category-ghshdsyh-4',
+			'type'     => 'text',
+			'title'    => esc_html__( 'Category1 + 1,00€*', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+			'default'  =>'design'
+		),
+		array(
+			'id'       => 'category-ghshdsyh-text-4',
+			'type'     => 'text',
+			'title'    => esc_html__( 'Category1 + 1,00€* Text', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+			'default'  =>'Category Ghshdsyh + 1,00€*'
+		),
+		array(
+			'id'       => 'category-ghshdsyh-image-one-4',
+			'type'     => 'text',
+			'title'    => esc_html__( 'Category1 + 1,00€* Image One', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+		),
+		array(
+			'id'       => 'category-ghshdsyh-image-two-4',
+			'type'     => 'text',
+			'title'    => esc_html__( 'Category1 + 1,00€* Image Two', 'your-textdomain-here' ),
+			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+		),
+		array(
+			'id'       => 'category-ghshdsyh-image-three-4',
+			'type'     => 'text',
+			'title'    => esc_html__( 'Category1 + 1,00€* Image Three', 'your-textdomain-here' ),
 			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
 		),
 	),

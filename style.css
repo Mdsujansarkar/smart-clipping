@@ -7258,3 +7258,15 @@ entry-content ul li .basic-color-price {
   background: #00AEEF;
   color: #ffffff;
 }
+.portfolio-menu ul li {
+  display: inline-block;
+  padding: 5px 8px !important;
+  font-size: 15px;
+  font-weight: 600;
+  background: #00AEEF;
+  color: #fff;
+  border-radius: 3px;
+  margin: 34px 4px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}

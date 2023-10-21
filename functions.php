@@ -4,6 +4,8 @@ function smart_clipping_files() {
     wp_enqueue_style( 'cdn_plyr_css', get_template_directory_uri() . 'https://cdn.plyr.io/3.6.8/plyr.css', array(), '1.0', 'all' );
     wp_enqueue_style( 'owl_theme_css', get_template_directory_uri() . '/assets/css/owl.theme.default.min.css', array(), '1.0', 'all' );
     wp_enqueue_style( 'owl_carousel_css', get_template_directory_uri() . '/assets/css/owl.carousel.min.css', array(), '1.0', 'all' );
+	wp_enqueue_style( 'baguetteBox', get_template_directory_uri() . '/assets/css/baguetteBox.min.css', array(), '1.0', 'all' );
+	wp_enqueue_style( 'slick-slider', get_template_directory_uri() . '/assets/css/slick.css', array(), '1.0', 'all' );
     wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '1.0', 'all' );
     wp_enqueue_style( 'smart_clipping_style_css', get_stylesheet_uri() );
 
@@ -15,7 +17,11 @@ function smart_clipping_files() {
     wp_enqueue_script( 'cdn_plyr_jquery', get_template_directory_uri() . 'https://cdn.plyr.io/3.6.8/plyr.js', array('jquery'), '1.0', true );
     wp_enqueue_script( 'plyer_jquery', get_template_directory_uri() .'/assets/js/plyer.js', array('jquery'), '1.0', true );
     wp_enqueue_script( 'owl_carousel_jquery', get_template_directory_uri() .'/assets/js/owl.carousel.min.js', array('jquery'), '1.0', true );
-    wp_enqueue_script( 'carousel_jquery', get_template_directory_uri() .'/assets/js/carousel.js', array('jquery'), '1.0', true );
+    wp_enqueue_script( 'slick-js', get_template_directory_uri() .'/assets/js/slick.min.js', array('jquery'), '1.0', true );
+	wp_enqueue_script( 'portfolioSlider', get_template_directory_uri() .'/assets/js/portfolioSlider.js', array('jquery'), '1.0', true );
+	wp_enqueue_script( 'baguetteBox', get_template_directory_uri() .'/assets/js/baguetteBox.min.js', array('jquery'), '1.0', true );
+	wp_enqueue_script( 'popupslider', get_template_directory_uri() .'/assets/js/popupslider.js', array('jquery'), '1.0', true );
+	wp_enqueue_script( 'carousel_jquery', get_template_directory_uri() .'/assets/js/carousel.js', array('jquery'), '1.0', true );
     
     wp_enqueue_script( 'beforeafter_jquery', get_template_directory_uri() .'assets/js/beforeafter.jquery.min.js', array(), '1.0', true );
     wp_enqueue_script( 'beforeafter_jquery_1.0.0', get_template_directory_uri() .'assets/js/beforeafter.jquery-1.0.0.min.js', array(), '1.0', true );

@@ -4,7 +4,9 @@
 Template Name: Pricing Template
 */
 
-get_header(); ?>
+get_header(); 
+global $sclipping;
+?>
 
 
 
@@ -25,17 +27,6 @@ get_header(); ?>
 <!-- CONTACT BANNER SECTION END -->
 
 <!-- PRICING SECTION START -->
-
-
-
-
-
-
-
-
-
-
-
 <!-- This snippet uses Font Awesome 5 Free as a dependency. You can download it at fontawesome.io! -->
 
 <div id="price">
@@ -53,10 +44,10 @@ get_header(); ?>
           <li> <span>&#10003;</span> Change of colour space</li>
           <li> <span>&#10003;</span> Image resizing</li>
           <li><span>&#10003;</span> Delivery: 24 Hours</li>
-          <li> <span>&#10539;</span> <del>Clipping: Standard (0,20€)</del></li>
-          <li> <span>&#10539;</span> <del>Clipping: Path (0,20€)</del></li>
-          <li> <span>&#10539;</span> <del> Colouration (1,00€) </del></li>
-          <li><span>&#10539;</span> <del>Retouch: Dirt (0,20€)</del></li>
+          <li> <span>&#10539;</span> Clipping: Standard (0,20€)</li>
+          <li> <span>&#10539;</span> Clipping: Path (0,20€)</li>
+          <li> <span>&#10539;</span> Colouration (1,00€)</li>
+          <li><span>&#10539;</span> Retouch: Dirt (0,20€)</li>
         </ul>
       </div>
     </div>
@@ -75,13 +66,13 @@ get_header(); ?>
         <ul>
           <li> <span>&#8592;</span> Everything from Basic (0,29€)</li>
           <li><span>&#10003;</span> Clipping: Standard (0,16€)</li>
-          <li><span>&#10539;</span><del> Clipping: Path (0,20€)</del></li>
+          <li><span>&#10539;</span> Clipping: Path (0,20€)</li>
           </li>
-          <li><span>&#10539;</span><del> Colours: Colouration (1,00€)</del></li>
-          <li><span>&#10539;</span><del> Retouch: Dirt (0,20€</del>)</li>
-          <li><span>&#10539;</span><del> Retouch: Dust (0,20€)</del></li>
-          <li><span>&#10539;</span><del> Retouch: Pimples (0,20€)</del></li>
-          <li><span>&#10539;</span><del> Other: Mirroring (0,20€)</del></li>
+          <li><span>&#10539;</span>Colours: Colouration (1,00€)</li>
+          <li><span>&#10539;</span> Retouch: Dirt (0,20€)</li>
+          <li><span>&#10539;</span> Retouch: Dust (0,20€)</li>
+          <li><span>&#10539;</span> Retouch: Pimples (0,20€)</li>
+          <li><span>&#10539;</span> Other: Mirroring (0,20€) </li>
         </ul>
       </div>
     </div>
@@ -100,11 +91,11 @@ get_header(); ?>
           <li> <span>&#8592;</span> Everything from Basic (0,29€) </li>
           <li> <span>&#10003;</span> Clipping: Standard (0,16€)</li>
           <li> <span>&#10003;</span> Shadow Creation (0,20€)</li>
-          <li><span>&#10539;</span> <del>Colours: Colouration (1,00€)</del></li>
-          <li><span>&#10539;</span> <del>Retouch: Dirt (0,20€)</del></li>
-          <li><span>&#10539;</span> <del>Retouch: Dust (0,20€)</del></li>
-          <li><span>&#10539;</span> <del>Retouch: Pimples (0,20€)</del></li>
-          <li><span>&#10539;</span> <del>Other: Mirroring (0,20€)</del></li>
+          <li><span>&#10539;</span>Colours: Colouration (1,00€)</li>
+          <li><span>&#10539;</span> Retouch: Dirt (0,20€) </li>
+          <li><span>&#10539;</span> Retouch: Dust (0,20€) </li>
+          <li><span>&#10539;</span> Retouch: Pimples (0,20€) </li>
+          <li><span>&#10539;</span> Other: Mirroring (0,20€) </li>
         </ul>
       </div>
     </div>
@@ -148,34 +139,144 @@ get_header(); ?>
         <div class="portfolio-menu">
           <ul>
             <li class="mixitup-control-active" data-filter="*">All</li>
-            <li data-filter=".web">Standard No extra charge</li>
-            <li data-filter=".design">Category ghshdsyh + 1,00€*</li>
-            <li data-filter=".graphic">Category1 + 1,00€*</li>
-            <li data-filter=".category2">Category2 + 1,00€*</li>
-            <li data-filter=".category3">Category3 + 1,00€*</li>
+            <li data-filter=".<?php echo $sclipping['standard-no-extra-charge'];?>">
+            <?php echo $sclipping['standard-no-extra-charge-text'];?></li>
+            <li data-filter=".<?php echo $sclipping['category-ghshdsyh'];?>">
+            <?php echo $sclipping['category-ghshdsyh-text'];?></li>
+            <li data-filter=".<?php echo $sclipping['category-ghshdsyh-2'];?>">
+            <?php echo $sclipping['category-ghshdsyh-text-2'];?></li>
+            <li data-filter=".<?php echo $sclipping['category-ghshdsyh-3'];?>">
+            <?php echo $sclipping['category-ghshdsyh-text-3'];?></li>
+            <li data-filter=".<?php echo $sclipping['category-ghshdsyh-4'];?>">
+            <?php echo $sclipping['category-ghshdsyh-text-4'];?></li>
           </ul>
         </div>
       </div>
     </div>
 
     <div class="row portfolio-list">
-      <div class="col-lg-4 mix single-portfolio-item web graphic">
+      <div class="col-lg-4 mix single-portfolio-item <?php echo $sclipping['standard-no-extra-charge'];?>">
+      <?php if(!$sclipping['standard-no-extra-charge-image-one']) :?>
         <img src="https://images.unsplash.com/photo-1585801442122-96dd773c76fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1631&q=80">
+      <?php endif; ?>
+      <?php if($sclipping['standard-no-extra-charge-image-one']) :?>
+        <img src="<?php echo $sclipping['standard-no-extra-charge-image-one']; ?>">
+      <?php endif; ?>
       </div>
-      <div class="col-lg-4 mix single-portfolio-item design">
+      <div class="col-lg-4 mix single-portfolio-item <?php echo $sclipping['standard-no-extra-charge'];?>">
+      <?php if(!$sclipping['standard-no-extra-charge-image-two']) :?>
+        <img src="https://images.unsplash.com/photo-1585801442122-96dd773c76fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1631&q=80">
+      <?php endif; ?>
+      <?php if($sclipping['standard-no-extra-charge-image-two']) :?>
+        <img src="<?php echo $sclipping['standard-no-extra-charge-image-two']; ?>">
+      <?php endif; ?>
+      </div>
+      <div class="col-lg-4 mix single-portfolio-item <?php echo $sclipping['standard-no-extra-charge'];?>">
+      <?php if(!$sclipping['standard-no-extra-charge-image-three']) :?>
+        <img src="https://images.unsplash.com/photo-1585801442122-96dd773c76fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1631&q=80">
+      <?php endif; ?>
+      <?php if($sclipping['standard-no-extra-charge-image-three']) :?>
+        <img src="<?php echo $sclipping['standard-no-extra-charge-image-three']; ?>">
+      <?php endif; ?>
+      </div>
+      <div class="col-lg-4 mix single-portfolio-item <?php echo $sclipping['category-ghshdsyh'];?>">
+      <?php if(!$sclipping['category-ghshdsyh-image-one']) :?>
         <img src="https://images.unsplash.com/photo-1630948198694-c3cd4df3c9bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80">
+      <?php endif; ?>
+      <?php if($sclipping['category-ghshdsyh-image-one']) :?>
+        <img src="<?php echo $sclipping['category-ghshdsyh-image-one']; ?>">
+      <?php endif; ?>
       </div>
-      <div class="col-lg-4 mix single-portfolio-item category2">
+      <div class="col-lg-4 mix single-portfolio-item <?php echo $sclipping['category-ghshdsyh'];?>">
+      <?php if(!$sclipping['category-ghshdsyh-image-two']) :?>
         <img src="https://images.unsplash.com/photo-1589666788370-cf6ba244bda2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60">
+      <?php endif; ?>
+      <?php if($sclipping['category-ghshdsyh-image-two']) :?>
+        <img src="<?php echo $sclipping['category-ghshdsyh-image-two']; ?>">
+      <?php endif; ?>
       </div>
-      <div class="col-lg-4 mix single-portfolio-item graphic">
+      <div class="col-lg-4 mix single-portfolio-item <?php echo $sclipping['category-ghshdsyh'];?>">
+      <?php if(!$sclipping['category-ghshdsyh-image-three']) :?>
         <img src="https://plus.unsplash.com/premium_photo-1661592645319-cb83e4c6b324?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80">
+      <?php endif; ?>
+      <?php if($sclipping['category-ghshdsyh-image-three']) :?>
+        <img src="<?php echo $sclipping['category-ghshdsyh-image-three']; ?>">
+      <?php endif; ?>
       </div>
-      <div class="col-lg-4 mix single-portfolio-item graphic">
+      <div class="col-lg-4 mix single-portfolio-item <?php echo $sclipping['category-ghshdsyh-2'];?>">
+      <?php if(!$sclipping['category-ghshdsyh-image-one-2']) :?>
         <img src="https://images.unsplash.com/photo-1591779051696-1c3fa1469a79?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80">
+      <?php endif; ?>
+      <?php if($sclipping['category-ghshdsyh-image-one-2']) :?>
+        <img src="<?php echo $sclipping['category-ghshdsyh-image-one-2']; ?>">
+      <?php endif; ?>
       </div>
-      <div class="col-lg-4 mix single-portfolio-item category3">
+      <div class="col-lg-4 mix single-portfolio-item <?php echo $sclipping['category-ghshdsyh-2'];?>">
+      <?php if(!$sclipping['category-ghshdsyh-image-two-2']) :?>
+        <img src="https://images.unsplash.com/photo-1591779051696-1c3fa1469a79?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80">
+      <?php endif; ?>
+      <?php if($sclipping['category-ghshdsyh-image-two-2']) :?>
+        <img src="<?php echo $sclipping['category-ghshdsyh-image-two-2']; ?>">
+      <?php endif; ?>
+      </div>
+      <div class="col-lg-4 mix single-portfolio-item <?php echo $sclipping['category-ghshdsyh-2'];?>">
+      <?php if(!$sclipping['category-ghshdsyh-image-three-2']) :?>
+        <img src="https://images.unsplash.com/photo-1591779051696-1c3fa1469a79?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80">
+      <?php endif; ?>
+      <?php if($sclipping['category-ghshdsyh-image-three-2']) :?>
+        <img src="<?php echo $sclipping['category-ghshdsyh-image-three-2']; ?>">
+      <?php endif; ?>
+      </div>
+      <div class="col-lg-4 mix single-portfolio-item <?php echo $sclipping['category-ghshdsyh-3'];?>">
+      <?php if(!$sclipping['category-ghshdsyh-image-one-3']) :?>
+        <img src="https://images.unsplash.com/photo-1591779051696-1c3fa1469a79?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80">
+      <?php endif; ?>
+      <?php if($sclipping['category-ghshdsyh-image-one-3']) :?>
+        <img src="<?php echo $sclipping['category-ghshdsyh-image-one-3']; ?>">
+      <?php endif; ?>
+
+      </div>
+      <div class="col-lg-4 mix single-portfolio-item <?php echo $sclipping['category-ghshdsyh-3'];?>">
+      <?php if(!$sclipping['category-ghshdsyh-image-two-3']) :?>
+        <img src="https://images.unsplash.com/photo-1591779051696-1c3fa1469a79?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80">
+      <?php endif; ?>
+      <?php if($sclipping['category-ghshdsyh-image-two-3']) :?>
+        <img src="<?php echo $sclipping['category-ghshdsyh-image-two-3']; ?>">
+      <?php endif; ?>
+      </div>
+      <div class="col-lg-4 mix single-portfolio-item <?php echo $sclipping['category-ghshdsyh-3'];?>">
+      <?php if(!$sclipping['category-ghshdsyh-image-three-3']) :?>
         <img src="https://images.unsplash.com/photo-1684700432561-09c54fc1d09b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1054&q=80">
+      <?php endif; ?>
+      <?php if($sclipping['category-ghshdsyh-image-three-3']) :?>
+        <img src="<?php echo $sclipping['category-ghshdsyh-image-three-3']; ?>">
+      <?php endif; ?>
+      </div>
+
+
+      <div class="col-lg-4 mix single-portfolio-item <?php echo $sclipping['category-ghshdsyh-4'];?>">
+      <?php if(!$sclipping['category-ghshdsyh-image-one-4']) :?>
+        <img src="https://images.unsplash.com/photo-1684700432561-09c54fc1d09b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1054&q=80">
+      <?php endif; ?>
+      <?php if($sclipping['category-ghshdsyh-image-one-4']) :?>
+        <img src="<?php echo $sclipping['category-ghshdsyh-image-one-4']; ?>">
+      <?php endif; ?>
+      </div>
+      <div class="col-lg-4 mix single-portfolio-item <?php echo $sclipping['category-ghshdsyh-4'];?>">
+      <?php if(!$sclipping['category-ghshdsyh-image-two-4']) :?>
+        <img src="https://images.unsplash.com/photo-1684700432561-09c54fc1d09b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1054&q=80">
+      <?php endif; ?>
+      <?php if($sclipping['category-ghshdsyh-image-two-4']) :?>
+        <img src="<?php echo $sclipping['category-ghshdsyh-image-two-4']; ?>">
+      <?php endif; ?>
+      </div>
+      <div class="col-lg-4 mix single-portfolio-item <?php echo $sclipping['category-ghshdsyh-4'];?>">
+      <?php if(!$sclipping['category-ghshdsyh-image-three-4']) :?>
+        <img src="https://images.unsplash.com/photo-1684700432561-09c54fc1d09b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1054&q=80">
+      <?php endif; ?>
+      <?php if($sclipping['category-ghshdsyh-image-three-4']) :?>
+        <img src="<?php echo $sclipping['category-ghshdsyh-image-three-4']; ?>">
+      <?php endif; ?>
       </div>
     </div>
   </div>
@@ -228,7 +329,7 @@ get_header(); ?>
     padding: 5px 15px;
     font-size: 15px;
     font-weight: 600;
-    background: #f61069;
+    background: #00AEEF;
     color: #fff;
     border-radius: 3px;
     margin: 34px 4px;
@@ -237,7 +338,7 @@ get_header(); ?>
   }
 
   .portfolio-menu ul li.mixitup-control-active {
-    background: #3b4a4d;
+    background: #00AEEF;
   }
 </style>
 <?php get_footer(); ?>

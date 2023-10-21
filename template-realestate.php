@@ -83,11 +83,6 @@ global $sclipping;
                                 </div>
                             <?php endif; ?>
                             </div>
-    
-                            <div class="card-product-body">
-                                <a href="contact" class="btn-clip btn-gallery btn-fill-white" style="box-shadow: 0px 0px 6px -3px #000000;">Get a Quote</a>
-                                <a href="form" class="btn-clip btn-gallery btn-fill btn-trail">Free Trial</a>
-                            </div>
                         </div>
                     </div>
     
@@ -106,11 +101,6 @@ global $sclipping;
                                     <img class="before_image" src="<?php echo $sclipping['real-afterAfter-two']; ?>" alt="before" />
                                 </div>
                                 <?php endif; ?>
-                            </div>
-    
-                            <div class="card-product-body">
-                                <a href="contact" class="btn-clip btn-gallery btn-fill-white" style="box-shadow: 0px 0px 6px -3px #000000;">Get a Quote</a>
-                                <a href="form" class="btn-clip btn-gallery btn-fill btn-trail">Free Trial</a>
                             </div>
                         </div>
                     </div>
@@ -131,11 +121,6 @@ global $sclipping;
                                 </div>
                                     <?php endif;?>
                             </div>
-    
-                            <div class="card-product-body">
-                                <a href="contact" class="btn-clip btn-gallery btn-fill-white" style="box-shadow: 0px 0px 6px -3px #000000;">Get a Quote</a>
-                                <a href="form" class="btn-clip btn-gallery btn-fill btn-trail">Free Trial</a>
-                            </div>
                         </div>
                     </div>
     
@@ -153,11 +138,6 @@ global $sclipping;
                                     <img class="before_image" src="<?php echo $sclipping['real-afterAfter-four']; ?>" alt="before" />
                                 </div>
                                 <?php endif; ?>
-                            </div>
-    
-                            <div class="card-product-body">
-                                <a href="contact" class="btn-clip btn-gallery btn-fill-white" style="box-shadow: 0px 0px 6px -3px #000000;">Get a Quote</a>
-                                <a href="form" class="btn-clip btn-gallery btn-fill btn-trail">Free Trial</a>
                             </div>
                         </div>
                     </div>
@@ -177,11 +157,6 @@ global $sclipping;
                                 </div>
                                 <?php endif; ?>
                             </div>
-    
-                            <div class="card-product-body">
-                                <a href="contact" class="btn-clip btn-gallery btn-fill-white" style="box-shadow: 0px 0px 6px -3px #000000;">Get a Quote</a>
-                                <a href="form" class="btn-clip btn-gallery btn-fill btn-trail">Free Trial</a>
-                            </div>
                         </div>
                     </div>
     
@@ -199,11 +174,6 @@ global $sclipping;
                                     <img class="before_image" src="<?php echo $sclipping['real-afterAfter-six']; ?>" alt="before" />
                                 </div>
                             <?php endif; ?>
-                            </div>
-    
-                            <div class="card-product-body">
-                                <a href="contact" class="btn-clip btn-gallery btn-fill-white" style="box-shadow: 0px 0px 6px -3px #000000;">Get a Quote</a>
-                                <a href="form" class="btn-clip btn-gallery btn-fill btn-trail">Free Trial</a>
                             </div>
                         </div>
                     </div>
@@ -244,7 +214,7 @@ global $sclipping;
 
                 <div class="col-lg-6">
                     <figure class="inquire-thumbnail">
-                        <img src="<?php echo get_template_directory_uri(  )?>/assets/images/service/inquire/inquire.svg" alt="inquire-thumbnail">
+                        <img src="<?php echo get_template_directory_uri(  ); ?>/assets/images/service/inquire/inquire.svg" alt="inquire-thumbnail">
                     </figure>
                 </div>
             </div>
@@ -258,7 +228,7 @@ global $sclipping;
             <div class="row">
                 <div class="col-lg-6">
                     <figure class="precision-thumbnail">
-                        <img src="<?php echo get_template_directory_uri(  )?>/assets/images/service/precision/precision.svg" alt="precision-thumbnail">
+                        <img src="<?php echo get_template_directory_uri(  ); ?>/assets/images/service/precision/precision.svg" alt="precision-thumbnail">
                     </figure>
                 </div>
 
@@ -305,7 +275,7 @@ global $sclipping;
             <div class="details">
                 <div class="card-detail">
                     <div class="card-cap">
-                        <img src="<?php echo get_template_directory_uri(  )?>/assets/images/process/register.svg" alt="card-cap">
+                        <img src="<?php echo get_template_directory_uri(  ); ?>/assets/images/process/register.svg" alt="card-cap">
                     </div>
 
                     <div class="card-detail-body">
@@ -323,7 +293,7 @@ global $sclipping;
 
                 <div class="card-detail">
                     <div class="card-cap">
-                        <img src="<?php echo get_template_directory_uri(  )?>/assets/images/process/upload.svg" alt="card-cap">
+                        <img src="<?php echo get_template_directory_uri(  ); ?>/assets/images/process/upload.svg" alt="card-cap">
                     </div>
 
                     <div class="card-detail-body">
@@ -341,7 +311,7 @@ global $sclipping;
 
                 <div class="card-detail">
                     <div class="card-cap">
-                        <img src="<?php echo get_template_directory_uri(  )?>/assets/images/process/offer.svg" alt="card-cap">
+                        <img src="<?php echo get_template_directory_uri(  ); ?>/assets/images/process/offer.svg" alt="card-cap">
                     </div>
 
                     <div class="card-detail-body">
@@ -359,7 +329,7 @@ global $sclipping;
 
                 <div class="card-detail">
                     <div class="card-cap">
-                        <img src="<?php echo get_template_directory_uri(  )?>/assets/images/process/processing.svg" alt="card-cap">
+                        <img src="<?php echo get_template_directory_uri(  ); ?>/assets/images/process/processing.svg" alt="card-cap">
                     </div>
 
                     <div class="card-detail-body">
@@ -377,7 +347,7 @@ global $sclipping;
 
                 <div class="card-detail">
                     <div class="card-cap">
-                        <img src="<?php echo get_template_directory_uri(  )?>/assets/images/process/archive.svg" alt="card-cap">
+                        <img src="<?php echo get_template_directory_uri(  ); ?>/assets/images/process/archive.svg" alt="card-cap">
                     </div>
 
                     <div class="card-detail-body">
@@ -395,7 +365,7 @@ global $sclipping;
 
                 <div class="card-detail">
                     <div class="card-cap">
-                        <img src="<?php echo get_template_directory_uri(  )?>/assets/images/process/business.svg" alt="card-cap">
+                        <img src="<?php echo get_template_directory_uri(  ); ?>/assets/images/process/business.svg" alt="card-cap">
                     </div>
 
                     <div class="card-detail-body">
